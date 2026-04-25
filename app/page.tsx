@@ -3,26 +3,42 @@ import React from 'react';
 export default function Homepage() {
   return (
     <div className="bg-[#0a0a0a] min-h-screen font-sans text-white">
-      {/* Navigation - Integrating the AVIF Logo */}
+      {/* Navigation - Centered Company Name */}
       <nav className="bg-black border-b border-[#cfa94d]/30 p-4 flex justify-between items-center sticky top-0 z-50 shadow-2xl">
-        <div className="flex items-center">
+        {/* Left: Logo */}
+        <div className="flex items-center w-1/4">
           <img 
             src="/logo.avif" 
             alt="Empress B Logistics Logo" 
-            className="h-24 w-auto object-contain" 
+            className="h-20 w-auto object-contain" 
           />
         </div>
-        <button className="bg-gradient-to-r from-[#cfa94d] to-[#af8c36] text-black px-8 py-2 rounded-full font-black uppercase tracking-widest hover:scale-105 transition shadow-[0_0_20px_rgba(207,169,77,0.4)]">
-          Client Portal
-        </button>
+
+        {/* Center: Company Name */}
+        <div className="absolute left-1/2 -translate-x-1/2 text-center">
+          <h1 className="text-[#cfa94d] font-black uppercase tracking-[0.2em] text-lg md:text-xl whitespace-nowrap">
+            Empress B Logistics
+          </h1>
+        </div>
+
+        {/* Right: Client Portal Button */}
+        <div className="flex justify-end w-1/4">
+          <button className="bg-gradient-to-r from-[#cfa94d] to-[#af8c36] text-black px-6 py-2 rounded-full font-black uppercase tracking-widest hover:scale-105 transition shadow-[0_0_20px_rgba(207,169,77,0.4)] text-xs md:text-sm">
+            Client Portal
+          </button>
+        </div>
       </nav>
 
-      {/* Hero Section - The "Mike's Story" Connection with Royal Branding */}
+      {/* Hero Section - Prominent Branding Focal Point */}
       <header className="relative py-24 px-10 text-center overflow-hidden">
-        {/* Subtle background glow to highlight the gold theme */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[#cfa94d]/5 blur-[120px] rounded-full"></div>
         
         <div className="relative z-10">
+          {/* Main Hero Brand Label */}
+          <span className="text-[#cfa94d] font-bold tracking-[0.3em] uppercase text-sm mb-4 block">
+            Empress B Logistics & Transportation, LLC
+          </span>
+          
           <h2 className="text-6xl font-black mb-6 bg-gradient-to-b from-white to-[#cfa94d] bg-clip-text text-transparent">
             Stop Searching. Start Driving.
           </h2>
@@ -36,38 +52,38 @@ export default function Homepage() {
         </div>
       </header>
 
-      {/* The Three Products - Royal Gold Product Cards */}
+      {/* The Three Products - Aligned with the Branding Updates */}
       <section className="p-16 grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
         
-        {/* Solo-Pro - The Professional Partner */}
-        <div className="bg-[#111] p-8 rounded-2xl shadow-2xl border border-[#cfa94d]/20 relative group hover:border-[#cfa94d]/50 transition-all">
-          <div className="h-1 w-20 bg-[#cfa94d] mb-6"></div>
-          <h3 className="text-2xl font-bold mb-4 text-[#cfa94d]">Solo-Pro Package</h3>
+        {/* Solo-Pro - Onyx & Silver Concept */}
+        <div className="bg-[#111] p-8 rounded-2xl shadow-2xl border border-gray-500/20 relative group hover:border-gray-400 transition-all">
+          <div className="h-1 w-20 bg-gray-400 mb-6"></div>
+          <h3 className="text-2xl font-bold mb-4 text-white">Solo-Pro Package</h3>
           <p className="text-gray-400 mb-6 leading-relaxed">
             Because single drivers run the business alone, they get overwhelmed by negotiations. 
             So, we act as your back office.
           </p>
           <ul className="text-sm space-y-3 text-gray-500 mb-6">
-            <li className="flex items-center gap-2 font-medium">• Full-service Dispatching</li>
+            <li className="flex items-center gap-2 font-medium">• Onyx & Silver Branding</li>
             <li className="flex items-center gap-2 font-medium">• 24/7 Virtual Support</li>
           </ul>
         </div>
 
-        {/* Fleet-Command - The Aggressive Scaler */}
-        <div className="bg-[#111] p-8 rounded-2xl shadow-2xl border border-[#cfa94d]/20 relative group hover:border-[#cfa94d]/50 transition-all">
-          <div className="h-1 w-20 bg-[#cfa94d] mb-6"></div>
-          <h3 className="text-2xl font-bold mb-4 text-[#cfa94d]">Fleet-Command Suite</h3>
+        {/* Fleet-Command - Black & Bronze Concept */}
+        <div className="bg-[#111] p-8 rounded-2xl shadow-2xl border border-[#cd7f32]/20 relative group hover:border-[#cd7f32]/50 transition-all">
+          <div className="h-1 w-20 bg-[#cd7f32] mb-6"></div>
+          <h3 className="text-2xl font-bold mb-4 text-[#cd7f32]">Fleet-Command Suite</h3>
           <p className="text-gray-400 mb-6 leading-relaxed">
             Because fleet owners spend nights on paperwork, they lack time to grow. 
             So, we automate your back office.
           </p>
           <ul className="text-sm space-y-3 text-gray-500 mb-6">
-            <li className="flex items-center gap-2 font-medium">• Invoicing & Compliance</li>
+            <li className="flex items-center gap-2 font-medium">• Industrial Bronze Aesthetic</li>
             <li className="flex items-center gap-2 font-medium">• Scalable Logistics</li>
           </ul>
         </div>
 
-        {/* Lane-Alert - The Data Hunter */}
+        {/* Lane-Alert - Royal Gold Concept */}
         <div className="bg-[#111] p-8 rounded-2xl shadow-2xl border border-[#cfa94d]/20 relative group hover:border-[#cfa94d]/50 transition-all">
           <div className="h-1 w-20 bg-[#cfa94d] mb-6"></div>
           <h3 className="text-2xl font-bold mb-4 text-[#cfa94d]">Lane-Alert SMS</h3>
@@ -76,14 +92,14 @@ export default function Homepage() {
             So, we text you the second they drop.
           </p>
           <ul className="text-sm space-y-3 text-gray-500 mb-6">
-            <li className="flex items-center gap-2 font-medium">• Instant SMS Notifications</li>
+            <li className="flex items-center gap-2 font-medium">• Royal Gold Speed Alerts</li>
             <li className="flex items-center gap-2 font-medium">• Lane-Specific Tracking</li>
           </ul>
         </div>
 
       </section>
 
-      {/* Footer - Legal Protections & Citation Support */}
+      {/* Footer */}
       <footer className="bg-black border-t border-[#cfa94d]/10 p-12 text-center text-sm text-gray-500">
         <div className="mb-6">
           <img src="/logo.avif" alt="Small Logo" className="h-12 mx-auto grayscale opacity-50" />
