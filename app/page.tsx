@@ -86,7 +86,7 @@ export default function Homepage() {
       {/* Footer - Legal Protections & Citation Support */}
       <footer className="bg-black border-t border-[#cfa94d]/10 p-12 text-center text-sm text-gray-500">
         <div className="mb-6">
-          <img src="/92ba62_8a564fb84d054ef99ee39da944080ea0~mv2.avif" alt="Small Logo" className="h-12 mx-auto grayscale opacity-50" />
+          <img src="/logo.avif" alt="Small Logo" className="h-12 mx-auto grayscale opacity-50" />
         </div>
         <p className="mb-2">© 2026 Empress B Logistics & Transportation, LLC. All Rights Reserved.</p>
         <p>Legal: Trademarks filed for Solo-Pro, Fleet-Command, and Lane-Alert.</p>
