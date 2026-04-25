@@ -17,7 +17,7 @@ export default function Homepage() {
         {/* Center: Company Name */}
         <div className="absolute left-1/2 -translate-x-1/2 text-center">
           <h1 className="text-[#cfa94d] font-black uppercase tracking-[0.2em] text-lg md:text-xl whitespace-nowrap">
-            Empress B Logistics
+            Empress B Logistics & Transportation, LLC
           </h1>
         </div>
 
