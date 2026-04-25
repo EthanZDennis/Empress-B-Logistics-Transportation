@@ -1,65 +1,68 @@
-import Image from "next/image";
+import React from 'react';
 
-export default function Home() {
+export default function Homepage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className="bg-slate-50 min-h-screen font-sans text-slate-900">
+      {/* Navigation - Highlighting Brand Identity */}
+      <nav className="bg-[#001f3f] text-white p-6 flex justify-between items-center shadow-lg">
+        <h1 className="text-2xl font-bold tracking-tight">Empress B Logistics</h1>
+        <button className="bg-[#FFDC00] text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-400 transition">
+          Client Portal
+        </button>
+      </nav>
+
+      {/* Hero Section - The "Mike's Story" Connection */}
+      <header className="py-20 px-10 text-center bg-white border-b">
+        <h2 className="text-5xl font-extrabold mb-6">Stop Searching. Start Driving.</h2>
+        <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-10">
+          Because you waste hours on load boards instead of driving, you lose money. 
+          So, we handle the negotiations while you stay on the road[cite: 189, 192].
+        </p>
+        <button className="bg-[#FFDC00] text-black text-xl px-10 py-4 rounded-lg font-bold shadow-xl hover:scale-105 transition">
+          Get a Free Route Analysis
+        </button>
+      </header>
+
+      {/* The Three Products - Detailed Value Propositions */}
+      <section className="p-16 grid md:grid-cols-3 gap-10">
+        
+        {/* Solo-Pro - The Professional Partner */}
+        <div className="bg-white p-8 rounded-2xl shadow-md border-t-8 border-[#001f3f]">
+          <h3 className="text-2xl font-bold mb-4">Solo-Pro Package</h3>
+          <p className="mb-6">Because single drivers run the business alone, they get overwhelmed by negotiations. So, we act as your back office[cite: 197, 199].</p>
+          <ul className="text-sm space-y-2 mb-6">
+            <li>• Full-service Dispatching</li>
+            <li>• 24/7 Virtual Support</li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        {/* Fleet-Command - The Aggressive Scaler */}
+        <div className="bg-white p-8 rounded-2xl shadow-md border-t-8 border-[#FF851B]">
+          <h3 className="text-2xl font-bold mb-4">Fleet-Command Suite</h3>
+          <p className="mb-6">Because fleet owners spend nights on paperwork, they lack time to grow. So, we automate your back office[cite: 206, 208].</p>
+          <ul className="text-sm space-y-2 mb-6">
+            <li>• Invoicing & Compliance</li>
+            <li>• Scalable Logistics</li>
+          </ul>
         </div>
-      </main>
+
+        {/* Lane-Alert - The Data Hunter */}
+        <div className="bg-white p-8 rounded-2xl shadow-md border-t-8 border-black">
+          <h3 className="text-2xl font-bold mb-4">Lane-Alert SMS</h3>
+          <p className="mb-6">Because high-paying loads disappear in seconds, you need speed. So, we text you the second they drop[cite: 215, 217].</p>
+          <ul className="text-sm space-y-2 mb-6">
+            <li>• Instant SMS Notifications</li>
+            <li>• Lane-Specific Tracking</li>
+          </ul>
+        </div>
+
+      </section>
+
+      {/* Footer - Legal Protections */}
+      <footer className="bg-slate-900 text-slate-400 p-10 text-center text-sm">
+        <p>© 2026 Empress B Logistics & Transportation, LLC. All Rights Reserved[cite: 224].</p>
+        <p className="mt-2">Legal: Trademarks filed for Solo-Pro, Fleet-Command, and Lane-Alert[cite: 224].</p>
+      </footer>
     </div>
   );
 }
