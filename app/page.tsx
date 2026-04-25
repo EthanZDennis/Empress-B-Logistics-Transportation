@@ -7,7 +7,7 @@ export default function Homepage() {
       <nav className="bg-black border-b border-[#cfa94d]/30 p-4 flex justify-between items-center sticky top-0 z-50 shadow-2xl">
         <div className="flex items-center">
           <img 
-            src="/92ba62_8a564fb84d054ef99ee39da944080ea0~mv2.avif" 
+            src="/logo.avif" 
             alt="Empress B Logistics Logo" 
             className="h-24 w-auto object-contain" 
           />
@@ -28,7 +28,7 @@ export default function Homepage() {
           </h2>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
             Because you waste hours on load boards instead of driving, you lose money. 
-            So, we handle the negotiations while you stay on the road[cite: 189, 192].
+            So, we handle the negotiations while you stay on the road.
           </p>
           <button className="bg-[#cfa94d] text-black text-xl px-12 py-5 rounded-lg font-bold shadow-[0_10px_40px_rgba(207,169,77,0.3)] hover:bg-[#af8c36] transition-all transform hover:-translate-y-1">
             Get a Free Route Analysis
@@ -45,7 +45,7 @@ export default function Homepage() {
           <h3 className="text-2xl font-bold mb-4 text-[#cfa94d]">Solo-Pro Package</h3>
           <p className="text-gray-400 mb-6 leading-relaxed">
             Because single drivers run the business alone, they get overwhelmed by negotiations. 
-            So, we act as your back office[cite: 197, 199].
+            So, we act as your back office.
           </p>
           <ul className="text-sm space-y-3 text-gray-500 mb-6">
             <li className="flex items-center gap-2 font-medium">• Full-service Dispatching</li>
@@ -73,7 +73,7 @@ export default function Homepage() {
           <h3 className="text-2xl font-bold mb-4 text-[#cfa94d]">Lane-Alert SMS</h3>
           <p className="text-gray-400 mb-6 leading-relaxed">
             Because high-paying loads disappear in seconds, you need speed. 
-            So, we text you the second they drop[cite: 215, 217].
+            So, we text you the second they drop.
           </p>
           <ul className="text-sm space-y-3 text-gray-500 mb-6">
             <li className="flex items-center gap-2 font-medium">• Instant SMS Notifications</li>
@@ -88,9 +88,9 @@ export default function Homepage() {
         <div className="mb-6">
           <img src="/92ba62_8a564fb84d054ef99ee39da944080ea0~mv2.avif" alt="Small Logo" className="h-12 mx-auto grayscale opacity-50" />
         </div>
-        <p className="mb-2">© 2026 Empress B Logistics & Transportation, LLC. All Rights Reserved[cite: 224].</p>
-        <p>Legal: Trademarks filed for Solo-Pro, Fleet-Command, and Lane-Alert[cite: 224].</p>
-        <p className="mt-4 italic">"Driving Excellence. Delivering Opportunity." [cite: 127]</p>
+        <p className="mb-2">© 2026 Empress B Logistics & Transportation, LLC. All Rights Reserved.</p>
+        <p>Legal: Trademarks filed for Solo-Pro, Fleet-Command, and Lane-Alert.</p>
+        <p className="mt-4 italic">Driving Excellence. Delivering Opportunity.</p>
       </footer>
     </div>
   );
